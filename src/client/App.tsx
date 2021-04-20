@@ -3,9 +3,30 @@ import "./styles/App.scss"
 
 const App = (): JSX.Element => {
   return (
-    <>
-      ✔️
-    </>
+    <div className="wrapper">
+      <div>
+        {"Hi, I'm Louis Sheid"}
+      </div>
+      <img src="https://s3-us-west-1.amazonaws.com/louisxsheid.com/louis.png"/>
+      <div>
+        {"💻 Software Developer"}
+      </div>
+      <div>
+        {"🌴 San Diego, California"}
+      </div>
+      <div>
+        {"You can check out what I'm working on "}
+        <a href='https://www.github.com/louisxsheid' target="_blank" rel="noreferrer">
+          {"here"}
+        </a>
+      </div>
+      <div>
+        {"or if you'd like to "}
+        <a href='https://www.linkedin.com/in/louisxsheid/' target="_blank" rel="noreferrer">
+          {"connect / get in touch"}
+        </a>
+      </div>
+    </div>
   );
 }
 

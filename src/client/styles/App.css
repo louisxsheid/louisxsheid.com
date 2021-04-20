@@ -1,4 +1,48 @@
 body {
-  background-color: #C6E2FF;
+  background: linear-gradient(164deg, #f2f2f2, #80fffa);
+  background-size: 400% 400%;
+  -webkit-animation: bodyBackground 0s ease infinite;
+  animation: bodyBackground 0s ease infinite;
+}
+
+@-webkit-keyframes bodyBackground {
+  0% {
+    background-position: 7% 0%;
+  }
+  50% {
+    background-position: 94% 100%;
+  }
+  100% {
+    background-position: 7% 0%;
+  }
+}
+
+@keyframes bodyBackground {
+  0% {
+    background-position: 7% 0%;
+  }
+  50% {
+    background-position: 94% 100%;
+  }
+  100% {
+    background-position: 7% 0%;
+  }
+}
+
+img {
+  width: 10rem;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=App.css.map */
