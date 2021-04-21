@@ -7,7 +7,7 @@ const App = (): JSX.Element => {
       <div>
         {"Hi, I'm Louis Sheid"}
       </div>
-      <img src="file:///C:/dev/louisxsheid-website/public/assets/louis.PNG"/>
+      <img src={require("../../public/assets/louis.PNG")}/>
       <div>
         {"💻 Software Developer"}
       </div>
