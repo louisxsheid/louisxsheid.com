@@ -7,7 +7,7 @@ const App = (): JSX.Element => {
       <div>
         {"Hi, I'm Louis Sheid"}
       </div>
-      <img src="https://s3-us-west-1.amazonaws.com/louisxsheid.com/louis.png"/>
+      <img src="file:///C:/dev/louisxsheid-website/public/assets/louis.PNG"/>
       <div>
         {"💻 Software Developer"}
       </div>
