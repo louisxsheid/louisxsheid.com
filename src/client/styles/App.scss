@@ -1,32 +1,26 @@
 body {
-  background: linear-gradient(164deg, #f2f2f2, #80fffa);
+  background: linear-gradient(140deg, #ffffff, #ffba69);
   background-size: 400% 400%;
 
   -webkit-animation: bodyBackground 0s ease infinite;
   -moz-animation: bodyBackground 0s ease infinite;
-  -o-animation: bodyBackground 0s ease infinite;
   animation: bodyBackground 0s ease infinite;
 }
 
 @-webkit-keyframes bodyBackground {
-  0%{background-position:7% 0%}
-  50%{background-position:94% 100%}
-  100%{background-position:7% 0%}
+  0%{background-position:53% 0%}
+  50%{background-position:48% 100%}
+  100%{background-position:53% 0%}
 }
 @-moz-keyframes bodyBackground {
-  0%{background-position:7% 0%}
-  50%{background-position:94% 100%}
-  100%{background-position:7% 0%}
-}
-@-o-keyframes bodyBackground {
-  0%{background-position:7% 0%}
-  50%{background-position:94% 100%}
-  100%{background-position:7% 0%}
+  0%{background-position:53% 0%}
+  50%{background-position:48% 100%}
+  100%{background-position:53% 0%}
 }
 @keyframes bodyBackground {
-  0%{background-position:7% 0%}
-  50%{background-position:94% 100%}
-  100%{background-position:7% 0%}
+  0%{background-position:53% 0%}
+  50%{background-position:48% 100%}
+  100%{background-position:53% 0%}
 }
 
 img {
