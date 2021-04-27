@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
 body {
-  background: linear-gradient(140deg, #ffffff, #ffba69);
+  font-family: 'Inconsolata';
+  background: linear-gradient(164deg, #f2f2f2, #80fffa);
   background-size: 400% 400%;
 
   -webkit-animation: bodyBackground 0s ease infinite;
@@ -25,11 +28,32 @@ body {
 
 img {
   width: 10rem;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.card {
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 5%;
+  padding: 5px;
+  background-color: #f1f1f1;
+  margin: 5px;
+}
+
+a {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  margin: auto;
+  text-decoration: none;
+}
+
+.icon {
+  width: 2rem;
 }
