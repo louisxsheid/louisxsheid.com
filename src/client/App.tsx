@@ -11,11 +11,13 @@ const App = (): JSX.Element => {
       <div style={{paddingRight: '5rem'}}>
         <NavBar />
       </div>
-      <div style={{paddingRight: '5rem'}}>
-        <WhoAmI />
-      </div>
-      <div style={{paddingRight: '5rem'}}>
-        <Skills />
+      <div className="whoami-skills-wrapper">
+        <div style={{paddingRight: '5rem'}}>
+          <WhoAmI />
+        </div>
+        <div style={{paddingRight: '5rem'}}>
+          <Skills />
+        </div>
       </div>
       <div style={{paddingRight: '5rem'}}>
         <Experience />

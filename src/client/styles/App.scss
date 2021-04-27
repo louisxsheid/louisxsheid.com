@@ -2,36 +2,36 @@
 
 body {
   font-family: 'Inconsolata';
-  background-color: #f1f1f1;
-  // background: linear-gradient(164deg, #f2f2f2, #80fffa);
-  // background-size: 400% 400%;
+  // background-color: #f1f1f1;
+  background: linear-gradient(164deg, #f2f2f2, #80fffa);
+  background-size: 400% 400%;
 
-  // -webkit-animation: bodyBackground 0s ease infinite;
-  // -moz-animation: bodyBackground 0s ease infinite;
-  // -o-animation: bodyBackground 0s ease infinite;
-  // animation: bodyBackground 0s ease infinite;
+  -webkit-animation: bodyBackground 0s ease infinite;
+  -moz-animation: bodyBackground 0s ease infinite;
+  -o-animation: bodyBackground 0s ease infinite;
+  animation: bodyBackground 0s ease infinite;
 }
 
-// @-webkit-keyframes bodyBackground {
-//   0%{background-position:7% 0%}
-//   50%{background-position:94% 100%}
-//   100%{background-position:7% 0%}
-// }
-// @-moz-keyframes bodyBackground {
-//   0%{background-position:7% 0%}
-//   50%{background-position:94% 100%}
-//   100%{background-position:7% 0%}
-// }
-// @-o-keyframes bodyBackground {
-//   0%{background-position:7% 0%}
-//   50%{background-position:94% 100%}
-//   100%{background-position:7% 0%}
-// }
-// @keyframes bodyBackground {
-//   0%{background-position:7% 0%}
-//   50%{background-position:94% 100%}
-//   100%{background-position:7% 0%}
-// }
+@-webkit-keyframes bodyBackground {
+  0%{background-position:7% 0%}
+  50%{background-position:94% 100%}
+  100%{background-position:7% 0%}
+}
+@-moz-keyframes bodyBackground {
+  0%{background-position:7% 0%}
+  50%{background-position:94% 100%}
+  100%{background-position:7% 0%}
+}
+@-o-keyframes bodyBackground {
+  0%{background-position:7% 0%}
+  50%{background-position:94% 100%}
+  100%{background-position:7% 0%}
+}
+@keyframes bodyBackground {
+  0%{background-position:7% 0%}
+  50%{background-position:94% 100%}
+  100%{background-position:7% 0%}
+}
 
 img {
   width: 10rem;
@@ -59,10 +59,10 @@ img {
 }
 
 .whoami-wrapper {
+  padding-left: 2.5rem;
   padding-top: 2.5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
   // height: 100%;
 }
@@ -103,6 +103,10 @@ img {
   font-size: 1.25rem;
 }
 
+ul {
+  margin: 0.5rem;
+}
+
 .experience-wrapper {
   width: 75%;
   // height: 100%;
@@ -116,4 +120,45 @@ img {
 
 .sub-title {
   padding-top: 0.5rem;
+}
+
+.whoami-skills-wrapper {
+  display: flex;
+}
+
+// .skill-divider {
+//   display: flex;
+// }
+
+@media only screen and (max-width: 1426px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .experience-wrapper {
+    width: 100%;
+    padding-left: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .experience-wrapper {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .whoami-skills-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .nav {
+    visibility: hidden;
+    margin: -10rem;
+  }
 }

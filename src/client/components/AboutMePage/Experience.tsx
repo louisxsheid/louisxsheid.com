@@ -7,7 +7,12 @@ const Experience = (): JSX.Element => {
     <div className='experience-wrapper'>
       <div className='title'>My Experience</div>
       <div className="job-wrapper">
-        <div className="job-title"><a href='https://perlmanclinic.com/' target='_blank' rel="noreferrer">{'The Perlman Clinic'}</a> | Contract Full Stack Developer | 2020</div>
+        <div className="job-title">
+          <a href='https://perlmanclinic.com/' target='_blank' rel="noreferrer">{'The Perlman Clinic'}</a>
+          <div style={{fontSize: '1rem'}}>
+            <div>Full Stack Developer (Contract) | 2020</div>
+          </div>
+        </div>
         <ul>
           <li>{`Harnessed React to create reusable and modular components for a frontend garnered towards both patients and doctors`}</li>
           <li>{`Developed with Express.js, handling both backend and frontend requests to a Node.js application server (later migrating to Go)`}</li>
@@ -25,7 +30,10 @@ const Experience = (): JSX.Element => {
           <a href='https://github.com/oslabs-beta/DockerLocal/' target='_blank' rel="noreferrer">
             {'DockerLocal'}
           </a>
-          <div style={{fontSize:'0.75rem', paddingTop: '0.4rem'}}>{' (Open Source Product)'}</div> | Software Developer | 2020</div></div>
+          <div style={{fontSize:'0.75rem', paddingTop: '0.4rem'}}>{' (Open Source Product)'}</div></div></div>
+          <div style={{fontSize: '1rem'}}>
+            <div>Software Developer | 2020</div>
+          </div>
           <ul>
             <li>{`Used Node.js child processes with bash shell scripts automating the remote file transfer process through SSH, quickly generating local assets`}</li>
             <li>{`Implemented Express.js, handling both backend and frontend requests to a Node.js application server`}</li>
@@ -36,7 +44,10 @@ const Experience = (): JSX.Element => {
         </ul>
       </div>
       <div className="job-wrapper">
-        <div className="job-title"><a href='https://www.kmswireless.com/' target='_blank' rel="noreferrer">{'K&M Systems'}</a> | Contract Web Developer | 2019</div>
+        <div className="job-title"><a href='https://www.kmswireless.com/' target='_blank' rel="noreferrer">{'K&M Systems'}</a></div>
+        <div style={{fontSize: '1rem'}}>
+            <div>Web Developer (Contract) | 2019</div>
+          </div>
         <ul>
           <li>{`Used a content management system with a SQL database to create a user friendly and ad-effective website`}</li>
           <li>{`Utilized effective SEO techniques to increase website traffic and company sales`}</li>
@@ -45,7 +56,10 @@ const Experience = (): JSX.Element => {
         </ul>
       </div>
       <div className="job-wrapper">
-        <div className="job-title">NewDesignMedia | Contract Web Developer | 2018</div>
+        <div className="job-title">NewDesignMedia</div>
+        <div style={{fontSize: '1rem'}}>
+            <div>Web Developer (Contract) | 2018</div>
+          </div>
         <ul>
           <li>{`Incorporated a content management system to create a user friendly and informative Real Estate listing website`}</li>
           <li>{`Utilized a third party map API to display listings from a user’s chosen location`}</li>
