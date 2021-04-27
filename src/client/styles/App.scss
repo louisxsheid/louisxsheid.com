@@ -2,35 +2,36 @@
 
 body {
   font-family: 'Inconsolata';
-  background: linear-gradient(164deg, #f2f2f2, #80fffa);
-  background-size: 400% 400%;
+  background-color: #f1f1f1;
+  // background: linear-gradient(164deg, #f2f2f2, #80fffa);
+  // background-size: 400% 400%;
 
-  -webkit-animation: bodyBackground 0s ease infinite;
-  -moz-animation: bodyBackground 0s ease infinite;
-  -o-animation: bodyBackground 0s ease infinite;
-  animation: bodyBackground 0s ease infinite;
+  // -webkit-animation: bodyBackground 0s ease infinite;
+  // -moz-animation: bodyBackground 0s ease infinite;
+  // -o-animation: bodyBackground 0s ease infinite;
+  // animation: bodyBackground 0s ease infinite;
 }
 
-@-webkit-keyframes bodyBackground {
-  0%{background-position:7% 0%}
-  50%{background-position:94% 100%}
-  100%{background-position:7% 0%}
-}
-@-moz-keyframes bodyBackground {
-  0%{background-position:7% 0%}
-  50%{background-position:94% 100%}
-  100%{background-position:7% 0%}
-}
-@-o-keyframes bodyBackground {
-  0%{background-position:7% 0%}
-  50%{background-position:94% 100%}
-  100%{background-position:7% 0%}
-}
-@keyframes bodyBackground {
-  0%{background-position:7% 0%}
-  50%{background-position:94% 100%}
-  100%{background-position:7% 0%}
-}
+// @-webkit-keyframes bodyBackground {
+//   0%{background-position:7% 0%}
+//   50%{background-position:94% 100%}
+//   100%{background-position:7% 0%}
+// }
+// @-moz-keyframes bodyBackground {
+//   0%{background-position:7% 0%}
+//   50%{background-position:94% 100%}
+//   100%{background-position:7% 0%}
+// }
+// @-o-keyframes bodyBackground {
+//   0%{background-position:7% 0%}
+//   50%{background-position:94% 100%}
+//   100%{background-position:7% 0%}
+// }
+// @keyframes bodyBackground {
+//   0%{background-position:7% 0%}
+//   50%{background-position:94% 100%}
+//   100%{background-position:7% 0%}
+// }
 
 img {
   width: 10rem;

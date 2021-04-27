@@ -1,8 +1,10 @@
 import React from 'react';
-const description = "I am a software developer experienced in creating full stack Javascript / Typescript applications. I value user accessibility and experience on the frontend and clear cut functionality and organization on the backend. Among that, I believe that creating useful and engaging software for both developers and users alike is the best part about computer programming. If you’ve read this far, you can tell that I’m just writing a lot of bullshit to fill in this blank space. I also like to code in MIT’s Scratch software for fun because I’m an autistic masochist."
+const description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nobis, incidunt consequuntur in necessitatibus, commodi cumque harum ut quasi odio earum quis praesentium, optio quas dolor ipsa! At iusto adipisci vero reprehenderit doloremque mollitia, blanditiis iste repellat saepe, officiis non cumque perferendis? Non maxime quidem ratione cum ducimus a, amet atque eos!"
+import FadeIn from 'react-fade-in';
 
 const WhoAmI = (): JSX.Element => {
   return (
+    <FadeIn>
     <div className="whoami-wrapper">
       <div>
         <div>
@@ -36,6 +38,7 @@ const WhoAmI = (): JSX.Element => {
         </div>
       </div>
     </div>
+    </FadeIn>
   )
 }
 

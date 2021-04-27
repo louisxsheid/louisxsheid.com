@@ -1,7 +1,9 @@
 import React from 'react';
+import FadeIn from 'react-fade-in';
 
 const Skills = (): JSX.Element => {
   return (
+    <FadeIn>
     <div className="skills-wrapper">
       <div>My Skills</div>
       <div>
@@ -123,6 +125,7 @@ const Skills = (): JSX.Element => {
         </div> */}
       </div>
     </div>
+    </FadeIn>
   )
 };
 
