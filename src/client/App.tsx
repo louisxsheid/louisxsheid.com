@@ -3,13 +3,23 @@ import "./styles/App.scss"
 import NavBar from './components/navbar';
 import WhoAmI from './components/AboutMePage/WhoAmI';
 import Skills from './components/AboutMePage/Skills';
+import Experience from './components/AboutMePage/Experience';
 
 const App = (): JSX.Element => {
   return (
     <div className='wrapper'>
-      <NavBar />
-      <WhoAmI />
-      <Skills />
+      <div style={{paddingRight: '5rem'}}>
+        <NavBar />
+      </div>
+      <div style={{paddingRight: '5rem'}}>
+        <WhoAmI />
+      </div>
+      <div style={{paddingRight: '5rem'}}>
+        <Skills />
+      </div>
+      <div style={{paddingRight: '5rem'}}>
+        <Experience />
+      </div>
     </div>
   );
 }
