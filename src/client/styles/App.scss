@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
 
 body {
   font-family: 'Inconsolata';
+  // background-color: #f1f1f1;
   background: linear-gradient(164deg, #f2f2f2, #80fffa);
   background-size: 400% 400%;
 
@@ -28,32 +29,130 @@ body {
 
 img {
   width: 10rem;
-  padding: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-.card {
-  border: 1px solid black;
-  text-align: center;
-  border-radius: 5%;
-  padding: 5px;
-  background-color: #f1f1f1;
-  margin: 5px;
+.nav {
+  padding: 2.5rem;
+  width: 100%;
+  // height: 100%;
 }
 
-a {
+.nav-placeholder:hover {
+  color: grey;
+  cursor: pointer;
+}
+
+.icon {
+  padding-right: 2rem;
+}
+
+.whoami-wrapper {
+  padding-left: 2.5rem;
+  padding-top: 2.5rem;
   display: flex;
-  align-items:center;
-  justify-content:center;
-  margin: auto;
-  text-decoration: none;
+  flex-direction: column;
+  width: 100%;
+  // height: 100%;
 }
 
 .icon {
   width: 2rem;
+}
+
+.icon-wrapper {
+  display: flex;
+  // justify-content: space-evenly;
+}
+
+.skills-wrapper {
+  padding: 2.5rem;
+  width: 100%;
+  // height: 100%;
+}
+
+.skills-icon {
+  width: 1rem;
+  padding-right: 0.25rem;
+  padding-left: 0.5rem;
+}
+
+.redux-icon {
+  width: 0.8rem;
+  padding-right: 0.35rem;
+  padding-left: 0.6rem;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.job-title {
+  font-size: 1.25rem;
+}
+
+ul {
+  margin: 0.5rem;
+}
+
+.experience-wrapper {
+  width: 75%;
+  // height: 100%;
+  padding-top: 2.5rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.sub-title {
+  padding-top: 0.5rem;
+}
+
+.whoami-skills-wrapper {
+  display: flex;
+}
+
+// .skill-divider {
+//   display: flex;
+// }
+
+@media only screen and (max-width: 1426px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .experience-wrapper {
+    width: 100%;
+    padding-left: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .experience-wrapper {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .whoami-skills-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .nav {
+    visibility: hidden;
+    margin: -10rem;
+  }
 }
