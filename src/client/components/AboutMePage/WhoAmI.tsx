@@ -1,5 +1,5 @@
 import React from 'react';
-const description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nobis, incidunt consequuntur in necessitatibus, commodi cumque harum ut quasi odio earum quis praesentium, optio quas dolor ipsa! At iusto adipisci vero reprehenderit doloremque mollitia, blanditiis iste repellat saepe, officiis non cumque perferendis? Non maxime quidem ratione cum ducimus a, amet atque eos!"
+const description = "I am a software developer experienced in creating full stack javascript / typescript applications. Currently learning anything I can."
 import FadeIn from 'react-fade-in';
 
 const WhoAmI = (): JSX.Element => {
@@ -7,8 +7,8 @@ const WhoAmI = (): JSX.Element => {
     <FadeIn>
     <div className="whoami-wrapper">
       <div>
-        <div>
-          {"Hi, I'm Louis Sheid"}
+        <div className="title">
+          {"Louis Xavier Sheid III"}
         </div>
         <img src={require("../../../../public/assets/louis.PNG")}/>
         <div>
@@ -21,7 +21,7 @@ const WhoAmI = (): JSX.Element => {
         <div style={{width: '15rem'}}>
           {description}
         </div>
-        <div style={{paddingTop: '0.5rem'}}>
+        <div style={{paddingTop: '1rem'}}>
           @louisxsheid
         </div>
         <div className="icon-wrapper">

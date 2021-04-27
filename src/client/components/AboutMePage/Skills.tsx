@@ -5,9 +5,9 @@ const Skills = (): JSX.Element => {
   return (
     <FadeIn>
     <div className="skills-wrapper">
-      <div>My Skills</div>
+      <div className='title'>My Skills</div>
       <div>
-        <div>Languages</div>
+        <div className='sub-title'>Languages</div>
         <div className="icon-wrapper">
           <img className="skills-icon" src={require("../../../../public/assets/icons/javascript_official.svg")} />
           <div>Javascript</div>
@@ -30,7 +30,7 @@ const Skills = (): JSX.Element => {
         </div>
       </div>
       <div>
-        <div>Frontend</div>  
+        <div className='sub-title'>Frontend</div>  
         <div className="icon-wrapper">
           <img className="skills-icon" src={require("../../../../public/assets/icons/react.svg")} />
           <div>React</div>
@@ -52,7 +52,7 @@ const Skills = (): JSX.Element => {
           <div>SASS</div>
         </div>
       </div>
-      <div>
+      <div className='sub-title'>
         <div>Backend</div>  
         <div className="icon-wrapper">
           <img className="skills-icon" src={require("../../../../public/assets/icons/node.svg")} />
@@ -72,7 +72,7 @@ const Skills = (): JSX.Element => {
         </div>
       </div>
       <div>
-        <div>Database</div>  
+        <div className='sub-title'>Database</div>  
         <div className="icon-wrapper">
           <img className="skills-icon" src={require("../../../../public/assets/icons/sql.svg")} />
           <div>{'SQL (Postgres)'}</div>
@@ -83,7 +83,7 @@ const Skills = (): JSX.Element => {
         </div>
       </div>
       <div>
-        <div>DevOps</div>
+        <div className='sub-title'>DevOps</div>
         <div className="icon-wrapper">
           <img className="skills-icon" src={require("../../../../public/assets/icons/docker.svg")} />
           <div>Docker</div>

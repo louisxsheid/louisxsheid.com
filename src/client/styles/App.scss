@@ -51,6 +51,7 @@ img {
 
 .nav-placeholder:hover {
   color: grey;
+  cursor: pointer;
 }
 
 .icon {
@@ -106,4 +107,13 @@ img {
   width: 75%;
   // height: 100%;
   padding-top: 2.5rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.sub-title {
+  padding-top: 0.5rem;
 }

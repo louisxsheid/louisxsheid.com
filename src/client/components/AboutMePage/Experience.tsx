@@ -5,7 +5,7 @@ const Experience = (): JSX.Element => {
   return (
     <FadeIn>
     <div className='experience-wrapper'>
-      <div>My Experience</div>
+      <div className='title'>My Experience</div>
       <div className="job-wrapper">
         <div className="job-title"><a href='https://perlmanclinic.com/' target='_blank' rel="noreferrer">{'The Perlman Clinic'}</a> | Contract Full Stack Developer | 2020</div>
         <ul>
