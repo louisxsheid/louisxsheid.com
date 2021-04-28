@@ -8,14 +8,14 @@ const WhoAmI = (): JSX.Element => {
     <div className="whoami-wrapper">
       <div>
         <div className="title">
-          {"Louis Xavier Sheid III"}
+          Louis Xavier Sheid III
         </div>
         <img src={require("../../../../public/assets/louis.PNG")}/>
-        <div>
-          {"💻 Software Developer"}
+        <div className='icon-wrapper'>
+          <div>💻</div> <div style={{paddingLeft: '0.25rem'}}>Software Developer</div>
         </div>
-        <div>
-          {"🌴 San Diego, California"}
+        <div className='icon-wrapper'>
+          <div>🌴</div> <div style={{paddingLeft: '0.38rem'}}>San Diego, California</div>
         </div>
         <div style={{padding: '0.5rem'}}/>
         <div style={{width: '15rem'}}>
