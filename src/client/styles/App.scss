@@ -71,9 +71,12 @@ img {
 }
 
 .skills-wrapper {
-  padding: 2.5rem;
+  padding-left: 2.5rem;
   width: 100%;
+  // background-color: red;
   // height: 100%;
+  display: flex;
+  // flex-direction: column;
 }
 
 .skills-icon {
@@ -120,9 +123,11 @@ ul {
   display: flex;
 }
 
-// .skill-divider {
-//   display: flex;
-// }
+.skill-divider {
+  display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+}
 
 @media only screen and (max-width: 1426px) {
   .wrapper {
@@ -150,9 +155,13 @@ ul {
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1440px) {
   .nav {
     visibility: hidden;
     margin: -10rem;
   }
+}
+
+.skill {
+  padding-right: 1rem;
 }
