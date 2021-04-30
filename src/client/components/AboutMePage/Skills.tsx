@@ -6,7 +6,7 @@ const Skills = (): JSX.Element => {
     <div>
       <div className='title' style={{paddingTop: '2.5rem', paddingLeft:'2.5rem'}}>My Skills</div>
         <div className="skills-wrapper">
-          <div className='skill-divider'>
+          {/* <div className='skill-divider'> */}
             <div className='skill'>
               <div className='sub-title'>Languages</div>
               <div className="icon-wrapper">
@@ -74,8 +74,8 @@ const Skills = (): JSX.Element => {
                 <div>AWS</div>
               </div>
             </div>
-            </div>
-            <div className='skill-divider'>
+            {/* </div> */}
+            {/* <div className='skill-divider'> */}
             <div className='skill'>
               <div className='sub-title'>Database</div>  
               <div className="icon-wrapper">
@@ -131,7 +131,7 @@ const Skills = (): JSX.Element => {
             </div> */}
           </div>
         </div>
-      </div>
+      // </div>
   )
 };
 
