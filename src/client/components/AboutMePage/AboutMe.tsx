@@ -4,14 +4,7 @@ import "../../styles/App.scss";
 import WhoAmI from './WhoAmI';
 import Skills from './Skills';
 import Experience from './Experience';
-import { RouteComponentProps } from '@reach/router';
 import NavBar from '../navbar';
-
-
-interface mainChildren extends RouteComponentProps
-{
-	children?: JSX.Element[];
-}
 
 const AboutMe = (): JSX.Element => {
   return (
