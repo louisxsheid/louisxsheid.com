@@ -1,36 +1,27 @@
 import React from 'react';
 import FadeIn from 'react-fade-in';
 import "./styles/App.scss"
+import AboutMe from './components/AboutMePage/AboutMe';
+import Projects from './components/ProjectsPage/Projects';
 import NavBar from './components/navbar';
-import WhoAmI from './components/AboutMePage/WhoAmI';
-import Skills from './components/AboutMePage/Skills';
-import Experience from './components/AboutMePage/Experience';
+import TIL from './components/TodayILearnedPage/TIL';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 const App = (): JSX.Element => {
   return (
-      <div className='wrapper'>
-        <div style={{paddingRight: '5rem'}}>
+      <Router>
           <NavBar />
-        </div>
-        <div className="whoami-skills-wrapper">
-          <div style={{paddingRight: '5rem'}}>
-            <FadeIn>
-              <WhoAmI />
-            </FadeIn>
-          </div>
-          <div style={{paddingRight: '5rem'}}>
-            <FadeIn>
-              <Skills />
-            </FadeIn>
-          </div>
-        </div>
-        <div style={{paddingRight: '5rem'}}>
-          <FadeIn>
-            <Experience />
-          </FadeIn>
-        </div>
-        
-      </div>
+          <Switch>
+            <Route path="/" exact component={AboutMe} />
+            <Route path="/projects" exact component={Projects} />
+            <Route path="/til" exact component={TIL} />
+          </Switch>
+      </Router>
   );
 }
 

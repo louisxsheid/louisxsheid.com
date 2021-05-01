@@ -13,7 +13,6 @@ img {
   padding-bottom: 0.5rem;
 }
 
-
 ///////// APP.tsx /////////
 .wrapper {
   display: flex;
@@ -25,13 +24,21 @@ img {
 
 ///////// NAVBAR.tsx /////////
 .nav {
-  padding: 2.5rem;
+  padding-top: 2.5rem;
+  padding-left: 2.5rem;
   width: 100%;
+  flex-direction: column;
 }
 
 .nav-placeholder:hover {
   color: grey;
   cursor: pointer;
+}
+
+.nav-placeholder {
+  padding-top: 0.05rem;
+  text-decoration: none;
+  color: black;
 }
 
 .icon {
@@ -50,6 +57,12 @@ img {
 .icon-wrapper {
   display: flex;
 }
+
+.nav-item {
+  display: flex;
+  padding-right: 2rem;
+}
+
 
 
 ///////// SKILLS /////////
@@ -86,6 +99,13 @@ img {
 ///////// EXPERIENCE /////////
 .job-title {
   font-size: 1.25rem;
+  a {
+    text-decoration: none;
+    color: blue;
+  }
+  a:hover {
+    color: lightgray;
+  }
 }
 
 ul {
@@ -101,6 +121,7 @@ ul {
 .title {
   font-size: 1.25rem;
   padding-bottom: 0.25rem;
+ 
 }
 
 .sub-title {
@@ -122,11 +143,16 @@ ul {
   .skills-wrapper {
     grid-template-columns: auto auto auto;
   }
-  
-  .nav {
-    visibility: hidden;
-    margin: -10rem;
+
+  .nav-link-bar {
+    display: none;
   }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+  }
+  
 }
 
 @media only screen and (max-width: 425px) {
@@ -151,5 +177,9 @@ ul {
     width: 100%;
     padding: 0;
     margin: 0;
+  }
+  .nav {
+    visibility: hidden;
+    margin: -10rem;
   }
 }
