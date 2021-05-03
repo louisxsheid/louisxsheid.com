@@ -9,5 +9,6 @@ const Skill = (props: any): JSX.Element => {
     </div>
   );
 };
-
 export default Skill;
+
+//{require(`../../../../public/assets/icons/${icon}`)}

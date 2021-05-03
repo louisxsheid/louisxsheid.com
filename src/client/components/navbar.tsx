@@ -38,13 +38,13 @@ const NavBar = (): JSX.Element => {
           Projects
         </Link>
       </div>
-      <div className="nav-link-bar">|</div>
+      {/* <div className="nav-link-bar">|</div>
       <div className="nav-item">
         <div style={{ paddingRight: "0.5rem" }}>{currentPath.til}</div>
         <Link to="til" className="nav-placeholder">
           TIL
         </Link>
-      </div>
+      </div> */}
     </nav>
   );
 };

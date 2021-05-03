@@ -12,14 +12,14 @@ const AboutMe = (): JSX.Element => {
       <FadeIn>
         <div className="wrapper">
           <div className="whoami-skills-wrapper">
-            <div style={{ paddingRight: "5rem" }}>
+            <div>
               <WhoAmI />
             </div>
-            <div style={{ paddingRight: "5rem" }}>
+            <div>
               <Skills />
             </div>
           </div>
-          <div style={{ paddingRight: "5rem" }}>
+          <div className="section-wrapper">
             <Experience />
           </div>
         </div>
