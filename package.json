@@ -7,7 +7,8 @@
     "test": "jest --coverage",
     "build": "parcel build ./public/index.html",
     "dev": "parcel ./public/index.html",
-    "lint": "eslint . --ext .tsx"
+    "lint": "eslint . --ext .tsx",
+    "format": "npx prettier --write ./src"
   },
   "author": "Louis Xavier Sheid III",
   "license": "ISC",
@@ -33,5 +34,8 @@
     "react-dom": "^17.0.2",
     "react-fade-in": "^2.0.1",
     "react-router-dom": "^5.2.0"
+  },
+  "alias": {
+    "iconIndex": "./public/assets/iconIndex.js"
   }
 }

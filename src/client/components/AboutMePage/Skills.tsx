@@ -1,6 +1,28 @@
 import React from "react";
+import Skill from "./Skill";
+import {
+  javascriptIcon,
+  typescriptIcon,
+  pythonIcon,
+  cppIcon,
+  reactIcon,
+  reduxIcon,
+  htmlIcon,
+  cssIcon,
+  sassIcon,
+  nodeIcon,
+  restIcon,
+  graphqlIcon,
+  awsIcon,
+  sqlIcon,
+  mongoIcon,
+  dockerIcon,
+  kubernetesIcon,
+  githubIcon,
+  travisIcon,
+  jestIcon,
+} from "./iconIndex";
 
-// TODO -> Convert into responsive grid layout
 const Skills = (): JSX.Element => {
   return (
     <div>
@@ -11,191 +33,46 @@ const Skills = (): JSX.Element => {
         My Skills
       </div>
       <div className="skills-wrapper">
-        {/* <div className='skill-divider'> */}
         <div className="skill">
           <div className="sub-title">Languages</div>
-          <div className="icon-wrapper">
-            <img
-              className="skills-icon"
-              src={require("../../../../public/assets/icons/javascript_official.svg")}
-            />
-            <div>Javascript</div>
-          </div>
-          <div className="icon-wrapper">
-            <img
-              className="skills-icon"
-              src={require("../../../../public/assets/icons/typesript.svg")}
-            />
-            <div>Typescript</div>
-          </div>
-          <div className="icon-wrapper">
-            <img
-              className="skills-icon"
-              src={require("../../../../public/assets/icons/python.svg")}
-            />
-            <div>Python</div>
-          </div>
-          <div className="icon-wrapper">
-            <img
-              className="skills-icon"
-              src={require("../../../../public/assets/icons/cpp.svg")}
-            />
-            <div>C/C++</div>
-          </div>
-          {/* <div className="icon-wrapper">
-                <img className="skills-icon" src={require("../../../../public/assets/icons/go.svg")} />
-                <div>Go</div>
-              </div> */}
+          <Skill name="Javascript" icon={javascriptIcon} />
+          <Skill name="Typescript" icon={typescriptIcon} />
+          <Skill name="Python" icon={pythonIcon} />
+          <Skill name="C/C++" icon={cppIcon} />
         </div>
         <div className="skill">
           <div className="sub-title">Frontend</div>
-          <div className="icon-wrapper">
-            <img
-              className="skills-icon"
-              src={require("../../../../public/assets/icons/react.svg")}
-            />
-            <div>React</div>
-          </div>
-          <div className="icon-wrapper">
-            <img
-              className="skills-icon"
-              src={require("../../../../public/assets/icons/redux.svg")}
-            />
-            <div>Redux</div>
-          </div>
-          <div className="icon-wrapper">
-            <img
-              className="skills-icon"
-              src={require("../../../../public/assets/icons/html.svg")}
-            />
-            <div>HTML</div>
-          </div>
-          <div className="icon-wrapper">
-            <img
-              className="skills-icon"
-              src={require("../../../../public/assets/icons/css.svg")}
-            />
-            <div>CSS</div>
-          </div>
-          <div className="icon-wrapper">
-            <img
-              className="skills-icon"
-              src={require("../../../../public/assets/icons/sass.svg")}
-            />
-            <div>SASS</div>
-          </div>
+          <Skill name="React" icon={reactIcon} />
+          <Skill name="Redux" icon={reduxIcon} />
+          <Skill name="HTML" icon={htmlIcon} />
+          <Skill name="CSS" icon={cssIcon} />
+          <Skill name="SASS" icon={sassIcon} />
         </div>
-
         <div className="skill">
           <div className="sub-title">Backend</div>
-          <div className="icon-wrapper">
-            <img
-              className="skills-icon"
-              src={require("../../../../public/assets/icons/node.svg")}
-            />
-            <div>Node</div>
-          </div>
-          <div className="icon-wrapper">
-            <img
-              className="skills-icon"
-              src={require("../../../../public/assets/icons/rest-api.png")}
-            />
-            <div>REST</div>
-          </div>
-          <div className="icon-wrapper">
-            <img
-              className="skills-icon"
-              src={require("../../../../public/assets/icons/graphql.svg")}
-            />
-            <div>GraphQL</div>
-          </div>
-          <div className="icon-wrapper">
-            <img
-              className="skills-icon"
-              src={require("../../../../public/assets/icons/aws.svg")}
-            />
-            <div>AWS</div>
-          </div>
+          <Skill name="Node" icon={nodeIcon} />
+          <Skill name="REST" icon={restIcon} />
+          <Skill name="GraphQL" icon={graphqlIcon} />
+          <Skill name="AWS" icon={awsIcon} />
         </div>
-        {/* </div> */}
-        {/* <div className='skill-divider'> */}
         <div className="skill">
           <div className="sub-title">Database</div>
-          <div className="icon-wrapper">
-            <img
-              className="skills-icon"
-              src={require("../../../../public/assets/icons/sql.svg")}
-            />
-            <div>{"SQL (Postgres)"}</div>
-          </div>
-          <div className="icon-wrapper">
-            <img
-              className="skills-icon"
-              src={require("../../../../public/assets/icons/mongo.svg")}
-            />
-            <div>{"NoSQL (MongoDB/Mongoose)"}</div>
-          </div>
+          <Skill name="SQL (Postgres)" icon={sqlIcon} />
+          <Skill name="NoSQL (MongoDB/Mongoose)" icon={mongoIcon} />
         </div>
         <div className="skill">
           <div className="sub-title">DevOps</div>
-          <div className="icon-wrapper">
-            <img
-              className="skills-icon"
-              src={require("../../../../public/assets/icons/docker.svg")}
-            />
-            <div>Docker</div>
-          </div>
-          <div className="icon-wrapper">
-            <img
-              className="skills-icon"
-              src={require("../../../../public/assets/icons/kubernetes.svg")}
-            />
-            <div>Kubernetes</div>
-          </div>
-          <div className="icon-wrapper">
-            <img
-              className="skills-icon"
-              src={require("../../../../public/assets/github.png")}
-            />
-            <div>Github Actions</div>
-          </div>
-          <div className="icon-wrapper">
-            <img
-              className="skills-icon"
-              src={require("../../../../public/assets/icons/travis.svg")}
-            />
-            <div>Travis CI</div>
-          </div>
+          <Skill name="Docker" icon={dockerIcon} />
+          <Skill name="Kubernetes" icon={kubernetesIcon} />
+          <Skill name="Github Actions" icon={githubIcon} />
+          <Skill name="Travis CI" icon={travisIcon} />
         </div>
         <div className="skill">
           <div>Testing</div>
-          <div className="icon-wrapper">
-            <img
-              className="skills-icon"
-              src={require("../../../../public/assets/icons/jest.svg")}
-            />
-            <div>Jest</div>
-          </div>
+          <Skill name="Jest" icon={jestIcon} />
         </div>
-        {/* <div className="icon-wrapper">
-              <img className="skills-icon" src={require("../../../../public/assets/icons/mongo.svg")} />
-              <div>Puppeteer</div>
-            </div>
-            <div className="icon-wrapper">
-              <img className="skills-icon" src={require("../../../../public/assets/icons/mongo.svg")} />
-              <div>Mocha</div>
-            </div>
-            <div className="icon-wrapper">
-              <img className="skills-icon" src={require("../../../../public/assets/icons/mongo.svg")} />
-              <div>Chai</div>
-            </div>
-            <div className="icon-wrapper">
-              <img className="skills-icon" src={require("../../../../public/assets/icons/mongo.svg")} />
-              <div>Enzyme</div>
-            </div> */}
       </div>
     </div>
-    // </div>
   );
 };
 
