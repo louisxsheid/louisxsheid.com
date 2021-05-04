@@ -2,7 +2,7 @@ import React from "react";
 import Skill from "../AboutMePage/Skill";
 
 const Project = (props: any) => {
-  const { title, subTitle, logo, description, stack, contributors } = props;
+  const { title, subTitle, logo, description, stack, contributors, repoLink } = props;
 
   return (
     <div className="project-wrapper">
@@ -16,6 +16,12 @@ const Project = (props: any) => {
       <div className="project-section">
         <div>Description</div>
         <div className="project-description">{description}</div>
+        <a href={repoLink} target="_blank">
+          <img
+            style={{width: "1.5rem"}}
+            src={require("../../../../public/assets/github.png")}
+          />
+        </a>
       </div>
       <div className="project-section">
         <div style={{ paddingBottom: "0.5rem" }}>Tech Stack</div>
