@@ -10,7 +10,9 @@ const Projects = (): JSX.Element => {
         <div>
           <Project {...dlData} />
         </div>
-        <div style={{paddingTop: "4rem"}}>More projects to be documented...</div>
+        <div style={{ paddingTop: "4rem" }}>
+          More projects to be documented...
+        </div>
       </div>
     </FadeIn>
   );

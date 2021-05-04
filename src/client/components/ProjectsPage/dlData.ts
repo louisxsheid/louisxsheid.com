@@ -57,5 +57,5 @@ export const dlData = {
   description: desc,
   stack: stack,
   contributors: contributors,
-  repoLink: "https://github.com/oslabs-beta/DockerLocal"
+  repoLink: "https://github.com/oslabs-beta/DockerLocal",
 };
