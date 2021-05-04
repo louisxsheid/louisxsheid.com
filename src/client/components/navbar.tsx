@@ -37,12 +37,12 @@ const NavBar = (): JSX.Element => {
           Projects
         </Link>
       </div>
-      <div className="nav-item">
+      {/* <div className="nav-item">
         <div className="nav-dot">{currentPath.til}</div>
         <Link to="til" className="nav-title">
           TIL
         </Link>
-      </div>
+      </div> */}
     </nav>
   );
 };
