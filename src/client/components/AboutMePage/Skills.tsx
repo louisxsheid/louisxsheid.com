@@ -1,4 +1,3 @@
-import React from "react";
 import Skill from "./Skill";
 import {
   javascriptIcon,
@@ -27,7 +26,7 @@ const Skills = (): JSX.Element => {
   return (
     <div>
       <div className="skills-title">My Skills</div>
-      <div className="skills-wrapper">
+      <div className="skills-container">
         <div className="skill">
           <div className="sub-title">Languages</div>
           <Skill name="Javascript" icon={javascriptIcon} />

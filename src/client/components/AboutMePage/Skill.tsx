@@ -1,14 +1,10 @@
-import React from "react";
-
 const Skill = (props: any): JSX.Element => {
   const { name, icon } = props;
   return (
-    <div className="icon-wrapper">
-      <img className="skills-icon" src={icon} />
-      <div>{name}</div>
+    <div className="skill-icon-container">
+      <img className="skill-icon" src={icon} />
+      <div className="skill-title">{name}</div>
     </div>
   );
 };
 export default Skill;
-
-//{require(`../../../../public/assets/icons/${icon}`)}

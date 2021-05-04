@@ -5,7 +5,7 @@ const Project = (props: any) => {
   const { title, subTitle, logo, description, stack, contributors, repoLink } = props;
 
   return (
-    <div className="project-wrapper">
+    <div className="project-container">
       <div className="project-section">
         <div style={{ fontSize: "1.15rem" }}>{title}</div>
         <div style={{ fontSize: "0.8rem", height: "1rem" }}>{subTitle}</div>
@@ -24,7 +24,7 @@ const Project = (props: any) => {
         </a>
       </div>
       <div className="project-section">
-        <div style={{ paddingBottom: "0.5rem" }}>Tech Stack</div>
+        <div style={{ paddingBottom: "1rem" }}>Tech Stack</div>
         <div>
           {stack.map((item: any) => {
             return <Skill key={item.name} name={item.name} icon={item.logo} />;

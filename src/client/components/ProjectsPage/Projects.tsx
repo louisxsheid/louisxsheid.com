@@ -1,5 +1,3 @@
-import React from "react";
-import NavBar from "../navbar";
 import Project from "./Project";
 import { dlData } from "./dlData";
 import FadeIn from "react-fade-in";
@@ -7,7 +5,7 @@ import FadeIn from "react-fade-in";
 const Projects = (): JSX.Element => {
   return (
     <FadeIn>
-      <div className="projects-wrapper">
+      <div className="projects-container">
         <div className="projects-title">My Projects</div>
         <div>
           <Project {...dlData} />

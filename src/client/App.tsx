@@ -1,11 +1,9 @@
-import React from "react";
-import FadeIn from "react-fade-in";
 import "./styles/App.scss";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AboutMe from "./components/AboutMePage/AboutMe";
 import Projects from "./components/ProjectsPage/Projects";
-import NavBar from "./components/navbar";
 import TIL from "./components/TodayILearnedPage/TIL";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import NavBar from "./components/navbar";
 
 const App = (): JSX.Element => {
   return (

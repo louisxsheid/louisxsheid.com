@@ -2,9 +2,9 @@ import React from "react";
 
 const Experience = (): JSX.Element => {
   return (
-    <div className="experience-wrapper">
-      <div className="title">My Experience</div>
-      <div className="job-wrapper">
+    <div className="experience-container">
+      <div className="experience-title">My Experience</div>
+      <div>
         <div className="job-title">
           <a href="https://perlmanclinic.com/" target="_blank" rel="noreferrer">
             {"The Perlman Clinic"}
@@ -24,7 +24,7 @@ const Experience = (): JSX.Element => {
           <li>{`Designed a user friendly UI/UX meant for patients of all ages and abilities`}</li>
         </ul>
       </div>
-      <div className="job-wrapper">
+      <div>
         <div className="job-title">
           <div style={{ display: "flex" }}>
             <a
@@ -51,7 +51,7 @@ const Experience = (): JSX.Element => {
           <li>{`Product developed under tech accelerator OS Labs (opensourcelabs.io)`}</li>
         </ul>
       </div>
-      <div className="job-wrapper">
+      <div>
         <div className="job-title">
           <a
             href="https://www.kmswireless.com/"
@@ -71,7 +71,7 @@ const Experience = (): JSX.Element => {
           <li>{`Implemented form protection to avoid scripted spam and other website security faults`}</li>
         </ul>
       </div>
-      <div className="job-wrapper">
+      <div>
         <div className="job-title">NewDesignMedia</div>
         <div style={{ fontSize: "1rem" }}>
           <div>Web Developer (Contract) | 2018</div>

@@ -1,26 +1,27 @@
-import React from "react";
-const description =
-  "I am a software developer experienced in creating full stack javascript / typescript applications. Currently learning anything I can.";
+//@ts-ignore
+import githubLogo from "../../../../public/assets/github.png";
+//@ts-ignore
+import linkedInLogo from "../../../../public/assets/linkedin.png"
+const description = "I am a software developer experienced in creating full stack javascript / typescript applications. Currently learning anything I can.";
 
 const WhoAmI = (): JSX.Element => {
   return (
-    <div className="whoami-wrapper">
-      <div>
-        <div className="title">Louis Xavier Sheid III</div>
-        <img src={require("../../../../public/assets/louis.PNG")} />
-        <div className="icon-wrapper">
+    <div className="whoami-container">
+        <div className="whoami-title">Louis Xavier Sheid III</div>
+        <img className ="whoami-pic" src={require("../../../../public/assets/louis.PNG")} />
+        <div className="icon-container">
           <div>💻</div>{" "}
-          <div style={{ paddingLeft: "0.25rem" }}>Software Developer</div>
+          <div>Software Developer</div>
         </div>
-        <div className="icon-wrapper">
+        <div className="icon-container">
           <div>🌴</div>{" "}
-          <div style={{ paddingLeft: "0.38rem" }}>San Diego, California</div>
+          <div>San Diego, California</div>
         </div>
         <div style={{ padding: "0.5rem" }} />
         <div style={{ width: "15rem" }}>{description}</div>
         <div style={{ paddingTop: "1rem" }}>@louisxsheid</div>
-        <div className="icon-wrapper">
-          <div className="social-wrapper">
+        <div className="icon-container">
+          <div>
             <a
               href="https://www.github.com/louisxsheid"
               target="_blank"
@@ -28,11 +29,11 @@ const WhoAmI = (): JSX.Element => {
             >
               <img
                 className="icon"
-                src={require("../../../../public/assets/github.png")}
+                src={githubLogo}
               />
             </a>
           </div>
-          <div className="social-wrapper">
+          <div>
             <a
               href="https://www.linkedin.com/in/louisxsheid/"
               target="_blank"
@@ -40,12 +41,11 @@ const WhoAmI = (): JSX.Element => {
             >
               <img
                 className="icon"
-                src={require("../../../../public/assets/linkedin.png")}
+                src={linkedInLogo}
               />
             </a>
           </div>
         </div>
-      </div>
     </div>
   );
 };

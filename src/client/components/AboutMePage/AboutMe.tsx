@@ -1,17 +1,14 @@
-import React from "react";
 import FadeIn from "react-fade-in";
-import "../../styles/App.scss";
 import WhoAmI from "./WhoAmI";
 import Skills from "./Skills";
 import Experience from "./Experience";
-import NavBar from "../navbar";
 
 const AboutMe = (): JSX.Element => {
   return (
     <div>
       <FadeIn>
-        <div className="wrapper">
-          <div className="whoami-skills-wrapper">
+        <div className="about-me-container">
+          <div className="whoami-skills">
             <div>
               <WhoAmI />
             </div>
@@ -19,7 +16,7 @@ const AboutMe = (): JSX.Element => {
               <Skills />
             </div>
           </div>
-          <div className="section-wrapper">
+          <div className="section">
             <Experience />
           </div>
         </div>

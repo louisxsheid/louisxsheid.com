@@ -6,268 +6,248 @@ body {
   background-color: #f1f1f1;
 }
 
-img {
-  width: 10rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-///////// APP.tsx /////////
-.wrapper {
+///////// AboutMe.tsx /////////
+.about-me-container {
   display: flex;
-}
-.whoami-skills-wrapper {
-  display: flex;
+  .whoami-pic {
+    width: 10rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .whoami-skills {
+    display: flex;
+  }
+  .section {
+    padding-right: 0rem;
+  }
 }
 
-.section-wrapper {
-  padding-right: 5rem;
-}
-
-///////// NAVBAR.tsx /////////
-.nav {
+///////// NavBar.tsx /////////
+.nav-container {
   padding-top: 2.5rem;
   padding-left: 2.5rem;
   width: 100%;
   flex-direction: column;
+  .nav-item {
+    display: flex;
+    padding-right: 2rem;
+    .nav-dot {
+      padding-right: 0.5rem;
+    }
+    .nav-title:hover {
+      color: grey;
+      cursor: pointer;
+    }
+    .nav-title {
+      padding-top: 0.05rem;
+      text-decoration: none;
+      color: black;
+    }
+  }
 }
 
-.nav-placeholder:hover {
-  color: grey;
-  cursor: pointer;
-}
 
-.nav-placeholder {
-  padding-top: 0.05rem;
-  text-decoration: none;
-  color: black;
-}
-
-.icon {
-  padding-right: 2rem;
-  width: 2rem;
-}
-
-.whoami-wrapper {
+///////// WhoAmI.tsx /////////
+.whoami-container {
   padding-left: 2.5rem;
   padding-top: 2.5rem;
   display: flex;
   flex-direction: column;
   width: 100%;
+  .whoami-title {
+    font-size: 1.25rem;
+  }
+  .icon-container {
+    display: flex;
+    .icon {
+      padding-right: 2rem;
+      width: 2rem;
+    }
+  }
 }
 
-.icon-wrapper {
-  display: flex;
-}
-
-.nav-item {
-  display: flex;
-  padding-right: 2rem;
-}
-
-///////// SKILLS /////////
-.skills-wrapper {
-  padding-left: 2.5rem;
-  width: 100%;
-  display: grid;
-  grid-template-columns: auto;
-}
-
-.skills-icon {
-  width: 1rem;
-  padding-right: 0.25rem;
-  // padding-left: 0.25rem;
-}
-
-.skill {
-  padding-right: 8rem;
-  padding-bottom: 2rem;
-}
-
-.redux-icon {
-  width: 0.8rem;
-  padding-right: 0.35rem;
-  padding-left: 0.6rem;
-}
-
-.icon-wrapper {
-  display: flex;
-  align-items: center;
-}
-
+///////// Skills.tsx /////////
 .skills-title {
   font-size: 1.25rem;
   padding-top: 2.5rem;
   padding-left: 2.5rem;
 }
 
-///////// EXPERIENCE /////////
-.job-title {
-  font-size: 1.25rem;
-  a {
-    text-decoration: none;
-    color: blue;
-  }
-  a:hover {
-    color: lightgray;
+.skills-container {
+  padding-left: 2.5rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  .skill {
+    padding-right: 8rem;
+    padding-bottom: 2rem;
+    .sub-title {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
   }
 }
 
-ul {
-  margin: 0.5rem;
+///////// Skill.tsx /////////
+.skill-icon-container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+  .skill-icon {
+    width: 1rem;
+    padding-right: 0.25rem;
+  }
 }
 
-.experience-wrapper {
+///////// Experience.tsx /////////
+.experience-container {
   width: 100%;
   padding-top: 2.5rem;
+  .experience-title {
+    font-size: 1.25rem;
+    padding-bottom: 0.5rem;
+  }
+  .job-title {
+    font-size: 1.25rem;
+    a {
+      text-decoration: none;
+      color: blue;
+    }
+    a:hover {
+      color: lightgray;
+    }
+  }
+  ul {
+    padding-left: 1.15rem;
+    margin-top: 0.25rem;
+  }
 }
 
-.title {
-  font-size: 1.25rem;
-  padding-bottom: 0.25rem;
-}
-
-.sub-title {
-  padding-top: 0.5rem;
-}
-
-///////// PROJECTS /////////
-.projects-wrapper {
+///////// Project.tsx /////////
+.projects-container {
   padding-left: 2.5rem;
   padding-top: 2.5rem;
-}
-
-.contributors {
-  padding-top: 1rem;
-  ul {
-    margin-top: 0;
-    padding: 0;
-  }
-  li {
-    padding-bottom: 1rem;
+  .projects-title {
+    font-size: 1.25rem;
+    padding-bottom: 0.5rem;
   }
 }
 
-.project-wrapper {
+///////// Projects.tsx /////////
+.project-container {
   display: grid;
   grid-template-columns: 18rem 35rem 10rem auto;
-}
-
-.project-description {
-  padding-top: 1rem;
-  margin-right: 4rem;
-  font-size: 0.9rem;
-  text-indent: 1.5rem;
-}
-
-.project-img {
-  width: 12rem;
-  height: 12rem;
-  padding: 0;
-  margin: 0;
-}
-
-.project-img-bg {
-  background-color: lightgray;
-  border: 1px solid black;
-  height: 12rem;
-  width: 12rem;
-}
-
-.projects-title {
-  font-size: 1.25rem;
-  padding-bottom: 0.5rem;
+  .project-img-bg {
+    background-color: lightgray;
+    border: 1px solid black;
+    height: 12rem;
+    width: 12rem;
+    .project-img {
+      width: 12rem;
+      height: 12rem;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .project-section {
+    .project-description {
+      padding-top: 1rem;
+      margin-right: 4rem;
+      font-size: 0.9rem;
+      text-indent: 1.5rem;
+    }
+    .contributors {
+      padding-top: 1rem;
+      ul {
+        margin-top: 0;
+        padding: 0;
+      }
+      li {
+        padding-bottom: 1rem;
+      }
+    }
+  }
 }
 
 ///////// MEDIA QUERIES /////////
 @media only screen and (max-width: 1426px) {
-  .wrapper {
+  .about-me-container {
     display: flex;
     flex-direction: column;
   }
-  .experience-wrapper {
+
+  .experience-container {
     width: 100%;
     padding-left: 2.5rem;
   }
 
-  .skills-wrapper {
+  .skills-container {
     grid-template-columns: auto auto auto;
   }
 
-  .nav-link-bar {
-    display: none;
-  }
-
-  .nav {
+  .nav-container {
     display: flex;
     flex-direction: row;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  .project-wrapper {
+  .project-container {
     grid-template-columns: auto auto;
-  }
-
-  .project-section {
-    padding-bottom: 2rem;
-    padding-right: 2rem;
-  }
-
-  .project-description {
-    margin: 0;
-    padding-top: 1rem;
+    .project-section {
+      padding-bottom: 2rem;
+      padding-right: 2rem;
+      .project-description {
+        margin: 0;
+        padding-top: 1rem;
+      }
+    }
   }
 }
 
 @media only screen and (max-width: 425px) {
-  .experience-wrapper {
+  .experience-container {
     width: 100%;
     padding: 0;
     margin: 0;
   }
 
-  .skills-wrapper {
+  .skills-container {
     grid-template-columns: auto;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .whoami-skills-wrapper {
+  .whoami-skills {
     display: flex;
     flex-direction: column;
   }
 
-  .experience-wrapper {
+  .experience-container {
     width: 100%;
     padding: 0;
     margin: 0;
   }
 
-  .project-wrapper {
+  .project-container {
     grid-template-columns: auto auto;
   }
 
-  .projects-wrapper {
+  .projects-container {
     padding-left: 1rem;
     padding-top: 1rem;
   }
 
-  .nav {
+  .nav-container {
     padding-left: 1rem;
     padding-top: 1rem;
   }
 
-  .section-wrapper {
+  .section-container {
     padding-right: 0rem;
   }
 
-  .whoami-wrapper {
-    padding-left: 1rem;
-    padding-top: 1rem;
-  }
-
-  .skills-wrapper {
+  .whoami-container {
     padding-left: 1rem;
     padding-top: 1rem;
   }
@@ -276,10 +256,15 @@ ul {
     padding-left: 1rem;
     padding-top: 1rem;
   }
+
+  .skills-container {
+    padding-left: 1rem;
+    padding-top: 1rem;
+  }
 }
 
 @media only screen and (max-width: 680px) {
-  .project-wrapper {
+  .project-container {
     grid-template-columns: auto;
   }
 }

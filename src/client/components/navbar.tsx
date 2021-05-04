@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 const NavBar = (): JSX.Element => {
@@ -24,27 +24,25 @@ const NavBar = (): JSX.Element => {
   }, [location]);
 
   return (
-    <nav className="nav">
+    <nav className="nav-container">
       <div className="nav-item">
-        <div style={{ paddingRight: "0.5rem" }}>{currentPath.aboutMe}</div>
-        <Link to="/" className="nav-placeholder">
+        <div className="nav-dot">{currentPath.aboutMe}</div>
+        <Link to="/" className="nav-title">
           About Me
         </Link>
       </div>
-      <div className="nav-link-bar">|</div>
       <div className="nav-item">
-        <div style={{ paddingRight: "0.5rem" }}>{currentPath.projects}</div>
-        <Link to="projects" className="nav-placeholder">
+        <div className="nav-dot">{currentPath.projects}</div>
+        <Link to="projects" className="nav-title">
           Projects
         </Link>
       </div>
-      {/* <div className="nav-link-bar">|</div>
       <div className="nav-item">
-        <div style={{ paddingRight: "0.5rem" }}>{currentPath.til}</div>
-        <Link to="til" className="nav-placeholder">
+        <div className="nav-dot">{currentPath.til}</div>
+        <Link to="til" className="nav-title">
           TIL
         </Link>
-      </div> */}
+      </div>
     </nav>
   );
 };

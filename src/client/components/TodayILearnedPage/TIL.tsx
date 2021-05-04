@@ -1,6 +1,3 @@
-import React from "react";
-import NavBar from "../navbar";
-
 const TIL = (): JSX.Element => {
   return (
     <div className="projects-wrapper">
