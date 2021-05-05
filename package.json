@@ -6,13 +6,14 @@
   "scripts": {
     "test": "jest --coverage",
     "build": "parcel build ./public/index.html",
-    "dev": "nodemon ./server.js",
+    "dev": "nodemon ./src/server/app.ts",
     "lint": "eslint . --ext .tsx",
     "format": "npx prettier --write ./src"
   },
   "author": "Louis Xavier Sheid III",
   "license": "ISC",
   "devDependencies": {
+    "@types/express": "github:types/npm-express",
     "@types/jest": "^26.0.22",
     "@types/react-router-dom": "^5.1.7",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
@@ -30,6 +31,7 @@
   "dependencies": {
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.3",
+    "app-root-path": "^3.0.0",
     "concurrently": "^6.0.2",
     "express": "^4.17.1",
     "nodemon": "^2.0.7",
@@ -37,7 +39,8 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-fade-in": "^2.0.1",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "ts-node": "^9.1.1"
   },
   "alias": {
     "iconIndex": "./public/assets/iconIndex.js"

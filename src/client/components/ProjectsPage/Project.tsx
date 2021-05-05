@@ -1,8 +1,18 @@
 import React from "react";
 import Skill from "../AboutMePage/Skill";
+//@ts-ignore
+import githubLogo from "../../../../public/assets/github.png";
 
 const Project = (props: any) => {
-  const { title, subTitle, logo, description, stack, contributors, repoLink } = props;
+  const {
+    title,
+    subTitle,
+    logo,
+    description,
+    stack,
+    contributors,
+    repoLink,
+  } = props;
 
   return (
     <div className="project-container">
@@ -17,10 +27,7 @@ const Project = (props: any) => {
         <div>Description</div>
         <div className="project-description">{description}</div>
         <a href={repoLink} target="_blank">
-          <img
-            style={{width: "1.5rem"}}
-            src={require("../../../../public/assets/github.png")}
-          />
+          <img style={{ width: "1.5rem" }} src={githubLogo} />
         </a>
       </div>
       <div className="project-section">
