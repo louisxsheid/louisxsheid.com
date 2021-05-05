@@ -1,4 +1,9 @@
-const Skill = (props: any): JSX.Element => {
+interface SkillProps {
+  name: String;
+  icon: any;
+}
+
+const Skill = (props: SkillProps): JSX.Element => {
   const { name, icon } = props;
   return (
     <div className="skill-icon-container">

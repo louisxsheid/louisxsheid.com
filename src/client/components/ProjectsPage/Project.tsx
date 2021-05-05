@@ -1,9 +1,20 @@
-import React from "react";
 import Skill from "../AboutMePage/Skill";
-//@ts-ignore
 import githubLogo from "../../../../public/assets/github.png";
 
-const Project = (props: any) => {
+interface ProjectDataProps {
+  title: string;
+  subTitle: string;
+  logo: any;
+  description: string;
+  stack: Array<{
+    name: string;
+    logo: any;
+  }>
+  contributors: Array<string>;
+  repoLink: string;
+}
+
+const Project = (props: ProjectDataProps): JSX.Element => {
   const {
     title,
     subTitle,

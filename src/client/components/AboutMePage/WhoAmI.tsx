@@ -1,7 +1,7 @@
-//@ts-ignore
 import githubLogo from "../../../../public/assets/github.png";
-//@ts-ignore
 import linkedInLogo from "../../../../public/assets/linkedin.png";
+import louis from "../../../../public/assets/louis.png";
+
 const description =
   "I am a software developer experienced in creating full stack javascript / typescript applications. Currently learning anything I can.";
 
@@ -11,7 +11,7 @@ const WhoAmI = (): JSX.Element => {
       <div className="whoami-title">Louis Xavier Sheid III</div>
       <img
         className="whoami-pic"
-        src={require("../../../../public/assets/louis.PNG")}
+        src={louis}
       />
       <div className="icon-container">
         <div>💻</div> <div>Software Developer</div>
