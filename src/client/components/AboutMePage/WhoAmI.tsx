@@ -1,3 +1,4 @@
+import React from "react";
 import githubLogo from "../../../../public/assets/github.png";
 import linkedInLogo from "../../../../public/assets/linkedin.png";
 import louis from "../../../../public/assets/louis.png";
@@ -9,10 +10,7 @@ const WhoAmI = (): JSX.Element => {
   return (
     <div className="whoami-container">
       <div className="whoami-title">Louis Xavier Sheid III</div>
-      <img
-        className="whoami-pic"
-        src={louis}
-      />
+      <img className="whoami-pic" src={louis} />
       <div className="icon-container">
         <div>💻</div> <div>Software Developer</div>
       </div>

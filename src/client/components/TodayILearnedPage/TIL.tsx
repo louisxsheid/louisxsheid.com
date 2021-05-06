@@ -1,3 +1,5 @@
+import React from "react";
+
 const TIL = (): JSX.Element => {
   return (
     <div className="projects-wrapper">

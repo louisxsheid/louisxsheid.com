@@ -1,3 +1,4 @@
+import React from "react";
 import FadeIn from "react-fade-in";
 import WhoAmI from "./WhoAmI";
 import Skills from "./Skills";

@@ -1,3 +1,4 @@
+import React from "react";
 import Skill from "../AboutMePage/Skill";
 import githubLogo from "../../../../public/assets/github.png";
 
@@ -9,7 +10,7 @@ interface ProjectDataProps {
   stack: Array<{
     name: string;
     logo: any;
-  }>
+  }>;
   contributors: Array<string>;
   repoLink: string;
 }

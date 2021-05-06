@@ -1,3 +1,4 @@
+import React from "react";
 import Project from "./Project";
 import { dlData } from "./dlData";
 import FadeIn from "react-fade-in";
