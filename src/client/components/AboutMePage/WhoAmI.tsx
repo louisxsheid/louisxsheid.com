@@ -1,7 +1,5 @@
 import React from "react";
-import githubLogo from "../../../../public/assets/github.png";
-import linkedInLogo from "../../../../public/assets/linkedin.png";
-import louis from "../../../../public/assets/louis.png";
+import { louis, githubIcon, linkedIn } from "./iconIndex";
 
 const description =
   "I am a software developer experienced in creating full stack javascript / typescript applications. Currently learning anything I can.";
@@ -27,7 +25,7 @@ const WhoAmI = (): JSX.Element => {
             target="_blank"
             rel="noreferrer"
           >
-            <img className="icon" src={githubLogo} />
+            <img className="icon" src={githubIcon} />
           </a>
         </div>
         <div>
@@ -36,7 +34,7 @@ const WhoAmI = (): JSX.Element => {
             target="_blank"
             rel="noreferrer"
           >
-            <img className="icon" src={linkedInLogo} />
+            <img className="icon" src={linkedIn} />
           </a>
         </div>
       </div>
