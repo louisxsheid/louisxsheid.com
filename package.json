@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest --coverage",
     "build": "parcel build ./public/index.html",
-    "dev": "nodemon ./src/server/app.ts",
+    "dev": "concurrently \"parcel ./public/index.html\" \"nodemon ./src/server/app.ts\"",
     "lint": "eslint . --ext .tsx",
     "format": "npx prettier --write ./src"
   },

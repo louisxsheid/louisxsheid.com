@@ -10,7 +10,7 @@ const Experience = (): JSX.Element => {
             {"The Perlman Clinic"}
           </a>
           <div style={{ fontSize: "1rem" }}>
-            <div>Full Stack Developer (Contract) | 2020</div>
+            <div>Full Stack Developer (Contract) | 2020/2021</div>
           </div>
         </div>
         <ul>
@@ -22,6 +22,21 @@ const Experience = (): JSX.Element => {
           <li>{`Had a noSQL database for organizing and displaying complex user medical data`}</li>
           <li>{`Incorporated visualization libraries to communicate a patients health tracking data to doctors through the use of clean and accurate charts`}</li>
           <li>{`Designed a user friendly UI/UX meant for patients of all ages and abilities`}</li>
+        </ul>
+      </div>
+      <div>
+        <div className="job-title">
+          <a href="https://pacific-webservices.com/" target="_blank" rel="noreferrer">
+            {"Pacific Web Services"}
+          </a>
+          <div style={{ fontSize: "1rem" }}>
+            <div>Full Stack Developer | 2020</div>
+          </div>
+        </div>
+        <ul>
+          <li>{`Harnessed React to create reusable and modular components for a frontend garnered towards both patients and doctors`}</li>
+          <li>{`Developed with Express.js, handling both backend and frontend requests to a Node.js application server`}</li>
+          <li>{`Designed a user friendly UI/UX meant for a variety of restaurants and customers`}</li>
         </ul>
       </div>
       <div>

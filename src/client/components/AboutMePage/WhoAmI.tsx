@@ -1,5 +1,5 @@
 import React from "react";
-import { louis, githubIcon, linkedIn } from "./iconIndex";
+import { githubIcon, linkedIn } from "./iconIndex";
 
 const description =
   "I am a software developer experienced in creating full stack javascript / typescript applications. Currently learning anything I can.";
