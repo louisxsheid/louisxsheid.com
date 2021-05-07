@@ -25,8 +25,8 @@ import {
 
 const Skills = (): JSX.Element => {
   return (
-    <div>
-      <div className="skills-title">My Skills</div>
+    <div style={{paddingLeft: "8rem"}}>
+      <div className="skills-title">~Skills~</div>
       <div className="skills-container">
         <div className="skill">
           <div className="sub-title">Languages</div>

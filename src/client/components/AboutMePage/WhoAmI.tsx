@@ -1,5 +1,5 @@
 import React from "react";
-import { githubIcon, linkedIn } from "./iconIndex";
+import { me, githubIcon, linkedIn } from "./iconIndex";
 
 const description =
   "I am a software developer experienced in creating full stack javascript / typescript applications. Currently learning anything I can.";
@@ -8,7 +8,9 @@ const WhoAmI = (): JSX.Element => {
   return (
     <div className="whoami-container">
       <div className="whoami-title">Louis Xavier Sheid III</div>
-      {/* <img className="whoami-pic" src={louis} /> */}
+      {/* <img className="whoami-pic" src={me} /> */}
+      <div style={{fontSize: "10rem"}}>?!</div>
+      <div style={{paddingTop: '0.5rem'}}/>
       <div className="icon-container">
         <div>💻</div> <div>Software Developer</div>
       </div>
