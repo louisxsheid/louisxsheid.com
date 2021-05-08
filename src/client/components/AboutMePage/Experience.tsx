@@ -33,8 +33,8 @@ const Experience = (): JSX.Element => {
             <div>Full Stack Developer | 2020</div>
           </div>
         </div>
-        <ul>
-          <li>{`Harnessed React to create reusable and modular components for a frontend garnered towards both patients and doctors`}</li>
+        <ul>{/* TODO: ADD MORE BULLETS */}
+          <li>{`Harnessed React to create reusable and modular components ...`}</li>
           <li>{`Developed with Express.js, handling both backend and frontend requests to a Node.js application server`}</li>
           <li>{`Designed a user friendly UI/UX meant for a variety of restaurants and customers`}</li>
         </ul>

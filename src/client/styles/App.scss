@@ -28,9 +28,9 @@ body {
   padding-top: 2.5rem;
   padding-left: 2.5rem;
   width: 100%;
-  flex-direction: column;
+  flex-direction: row;
   .nav-item {
-    display: flex;
+    // display: flex;
     padding-right: 2rem;
     .nav-dot {
       padding-right: 0.5rem;
