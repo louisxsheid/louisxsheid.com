@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Farro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
 ///////// ROOT /////////
 body {
   font-family: "Inconsolata";
-  background-color: #f1f1f1;
+  background-color: white;
 }
 
 ///////// AboutMe.tsx /////////
@@ -25,12 +26,12 @@ body {
 
 ///////// NavBar.tsx /////////
 .nav-container {
+  display: flex;
   padding-top: 2.5rem;
   padding-left: 2.5rem;
   width: 100%;
-  flex-direction: row;
   .nav-item {
-    display: flex;
+    display: flex; 
     padding-right: 2rem;
     .nav-dot {
       padding-right: 0.5rem;
@@ -48,7 +49,7 @@ body {
 }
 
 ///////// WhoAmI.tsx /////////
-.whoami-container {
+.whoami-container{
   padding-left: 2.5rem;
   padding-top: 2.5rem;
   display: flex;
@@ -73,22 +74,27 @@ body {
   font-family: "Farro";
   padding-top: 2.5rem;
   padding-left: 2.5rem;
+
 }
 
-.skills-container {
-  padding-left: 2.5rem;
-  width: 100%;
-  display: grid;
-  grid-template-columns: auto;
-  .skill {
-    padding-right: 8rem;
-    padding-bottom: 2rem;
-    .sub-title {
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
+.all-skills-container {
+  padding-left: 6rem;
+  .skills-container {
+    padding-left: 2.5rem;
+    width: 100%;
+    display: grid;
+    //grid-template-columns: auto;
+    .skill {
+      padding-right: 8rem;
+      padding-bottom: 1rem;
+      .sub-title {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
     }
-  }
+  } 
 }
+
 
 ///////// Skill.tsx /////////
 .skill-icon-container {
@@ -188,11 +194,10 @@ body {
   .skills-container {
     grid-template-columns: auto auto auto;
   }
+ 
 
-  .nav-container {
-    display: flex;
-    flex-direction: row;
-  }
+ 
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -207,6 +212,10 @@ body {
       }
     }
   }
+ 
+.skills-container {
+    grid-template-columns: auto;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -216,9 +225,7 @@ body {
     margin: 0;
   }
 
-  .skills-container {
-    grid-template-columns: auto;
-  }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -262,8 +269,11 @@ body {
   }
 
   .skills-container {
-    padding-left: 1rem;
+    //padding-left: 1rem;
     padding-top: 1rem;
+  }
+.all-skills-container {
+    padding-left: 0;
   }
 }
 

@@ -7,7 +7,7 @@ const Projects = (): JSX.Element => {
   return (
     <FadeIn>
       <div className="projects-container">
-        <div className="projects-title">~Projects~</div>
+        <div className="projects-title">Projects</div>
         <div>
           <Project {...dlData} />
         </div>

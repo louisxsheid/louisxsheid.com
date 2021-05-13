@@ -3,7 +3,7 @@ import React from "react";
 const Experience = (): JSX.Element => {
   return (
     <div className="experience-container">
-      <div className="experience-title">~Experience~</div>
+      <div className="experience-title">Experience</div>
       <div>
         <div className="job-title">
           <a href="https://perlmanclinic.com/" target="_blank" rel="noreferrer">

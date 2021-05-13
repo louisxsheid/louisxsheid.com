@@ -25,13 +25,13 @@ import {
 
 const Skills = (): JSX.Element => {
   return (
-    <div style={{paddingLeft: "8rem"}}>
-      <div className="skills-title">~Skills~</div>
+    <div className="all-skills-container">
+      <div className="skills-title">Skills</div>
       <div className="skills-container">
         <div className="skill">
           <div className="sub-title">Languages</div>
-          <Skill name="Javascript" icon={javascriptIcon} />
-          <Skill name="Typescript" icon={typescriptIcon} />
+          <Skill name="JavaScript" icon={javascriptIcon} />
+          <Skill name="TypeScript" icon={typescriptIcon} />
           <Skill name="Python" icon={pythonIcon} />
           <Skill name="C/C++" icon={cppIcon} />
         </div>
