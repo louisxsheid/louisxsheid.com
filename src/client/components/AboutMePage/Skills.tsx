@@ -21,7 +21,7 @@ import {
   githubIcon,
   travisIcon,
   jestIcon,
-} from "./iconIndex";
+} from "../AboutMePage/iconIndex";
 
 const Skills = (): JSX.Element => {
   return (
@@ -59,13 +59,13 @@ const Skills = (): JSX.Element => {
           <div className="sub-title">DevOps</div>
           <Skill name="Docker" icon={dockerIcon} />
           <Skill name="Kubernetes" icon={kubernetesIcon} />
-          <Skill name="Github Actions" icon={githubIcon} />
+          {/* <Skill name="Github Actions" icon={githubIcon} /> */}
           <Skill name="Travis CI" icon={travisIcon} />
         </div>
-        <div className="skill">
+        {/* <div className="skill">
           <div>Testing</div>
           <Skill name="Jest" icon={jestIcon} />
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -34,7 +34,7 @@ const Experience = (): JSX.Element => {
           </div>
         </div>
         <ul>{/* TODO: ADD MORE BULLETS */}
-          <li>{`Harnessed React to create reusable and modular components ...`}</li>
+          <li>{`Harnessed React to create reusable and modular components for both customers and restaurants to use (user / admin)`}</li>
           <li>{`Developed with Express.js, handling both backend and frontend requests to a Node.js application server`}</li>
           <li>{`Designed a user friendly UI/UX meant for a variety of restaurants and customers`}</li>
         </ul>

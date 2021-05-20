@@ -136,6 +136,9 @@ body {
 .projects-container {
   padding-left: 2.5rem;
   padding-top: 2.5rem;
+  .projects {
+    padding-bottom: 4rem;
+  }
   .projects-title {
     font-family: 'Farro';
     font-size: 1.25rem;
