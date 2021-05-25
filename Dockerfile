@@ -1,12 +1,12 @@
-# FROM node:16-alpine3.11
+FROM node:16-alpine3.11
 
-# WORKDIR '/app'
+WORKDIR '/app'
 
-# COPY package.json .
-# COPY . .
+COPY package.json .
+COPY . .
 
-# RUN npm install
+RUN npm install
 
-# EXPOSE 3000
+EXPOSE 3000
 
-# CMD npm start
+CMD npm start
