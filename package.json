@@ -1,6 +1,7 @@
 {
   "name": "louisxsheid-website",
   "version": "1.0.0",
+  "repository": "https://www.github.com/louisxsheid/louisxsheid.com",
   "description": "louisxsheid personal website",
   "main": "index.js",
   "scripts": {
