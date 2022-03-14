@@ -2,7 +2,7 @@ import React from "react";
 import { me, githubIcon, linkedIn } from "../../components/AboutMePage/iconIndex";
 
 const description =
-  "I am a software developer experienced in creating full stack JavaScript / TypeScript applications. Currently learning anything I can.";
+  "I am a software developer experienced in creating full stack JavaScript / TypeScript applications. Currently working as an Associate RF Engineer and Software Developer at K&M Systems.";
 
 const WhoAmI = (): JSX.Element => {
   return (
@@ -12,10 +12,10 @@ const WhoAmI = (): JSX.Element => {
       {/* <div style={{fontSize: "10rem"}}>?!</div> */}
       <div style={{paddingTop: '0.5rem'}}/>
       <div className="icon-container">
-        <div>💻</div> <div>Software Developer</div>
+        <div className="emoji">💻</div> <div className="emoji-title" id="soft-dev">Software Developer</div>
       </div>
       <div className="icon-container">
-        <div>🌴</div> <div>San Diego, California</div>
+        <div className="emoji">🌴</div> <div className="emoji-title" id="san-diego">San Diego, California</div>
       </div>
       <div style={{ padding: "0.5rem" }} />
       <div style={{ width: "15rem" }}>{description}</div>

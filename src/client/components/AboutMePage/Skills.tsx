@@ -21,6 +21,7 @@ import {
   githubIcon,
   travisIcon,
   jestIcon,
+  svelteIcon
 } from "../AboutMePage/iconIndex";
 
 const Skills = (): JSX.Element => {
@@ -38,7 +39,7 @@ const Skills = (): JSX.Element => {
         <div className="skill">
           <div className="sub-title">Frontend</div>
           <Skill name="React" icon={reactIcon} />
-          <Skill name="Redux" icon={reduxIcon} />
+          <Skill name="Svelte" icon={svelteIcon} />
           <Skill name="HTML" icon={htmlIcon} />
           <Skill name="CSS" icon={cssIcon} />
           <Skill name="SASS" icon={sassIcon} />

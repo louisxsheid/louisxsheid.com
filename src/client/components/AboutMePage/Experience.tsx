@@ -6,6 +6,23 @@ const Experience = (): JSX.Element => {
       <div className="experience-title">Experience</div>
       <div>
         <div className="job-title">
+          <a href="https://www.kmswireless.com/" target="_blank" rel="noreferrer">
+            {"K&M Systems"}
+          </a>
+          <div style={{ fontSize: "1rem" }}>
+            <div>Associate RF Engineer / Software Developer | Sep 2021 - present</div>
+          </div>
+        </div>
+        <ul>
+          <li>{`Utilized Svelte + Canvas API to create a responsive 2D editing environment for designing RF systems and displaying propagation heatmaps`}</li>
+          <li>{`Harnessed Flask to convert antenna propagation libraries into a web server that returns propagation heatmaps from wall and antenna inputs`}</li>
+          <li>{`Utilized Github actions to make the teams development cycle agile and methodical while keeping the codebase organized and documented`}</li>
+          <li>{`Commissioned a variety of DAS systems including Comba, ADRF, and Newmar BDA’s, BBU’s, and annunciator panels`}</li>
+          <li>{`Designed and implemented RF public safety and cellular systems for a variety of clients located internationally`}</li>
+        </ul>
+      </div>
+      <div>
+        <div className="job-title">
           <a href="https://perlmanclinic.com/" target="_blank" rel="noreferrer">
             {"The Perlman Clinic"}
           </a>
